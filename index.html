@@ -3,9 +3,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="src/index.css">
+
   <title>Counter With Test</title>
 </head>
 <body>
-  <h1>Counter With Test</h1>
+  <div class="counter-app">
+    <div class="counter-app__wrapper">
+      <h1 class="counter-app__title">COUNTER</h1>
+      <div class="counter-app__value"></div>
+      <div class="counter-app__buttons">
+        <button type="button" class="counter-app__btn-minus">Minus</button>
+        <button type="button" class="counter-app__btn-reset">Reset</button>
+        <button type="button" class="counter-app__btn-plus">Plus</button>
+      </div>
+    </div>
+  </div>
+  <script src="./src/index.js"></script>
 </body>
 </html>

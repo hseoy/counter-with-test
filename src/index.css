@@ -1,0 +1,75 @@
+/* RESET */
+
+body,
+h1 {
+  margin: 0;
+}
+
+/* Counter App */
+
+.counter-app {
+  --app-background-color: #eee;
+  --app-primary-color: #444;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--app-primary-color);
+  background-color: var(--app-background-color);
+}
+
+.counter-app__wrapper {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.counter-app__title {
+  font-size: 90px;
+}
+
+.counter-app__value {
+  font-size: 180px;
+}
+
+.counter-app__buttons {
+  margin-top: 20px;
+}
+
+.counter-app__buttons > .counter-app__btn-plus {
+  --btn-color: #fff;
+  --btn-bg-color: #f63a2f;
+}
+
+.counter-app__buttons > .counter-app__btn-minus {
+  --btn-color: #fff;
+  --btn-bg-color: #1861fb;
+}
+
+.counter-app__buttons > .counter-app__btn-reset {
+  --btn-color: #fff;
+  --btn-bg-color: var(--app-primary-color);
+}
+
+.counter-app__buttons > button {
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+
+  background-color: var(--btn-bg-color, #000);
+  color: var(--btn-color, #fff);
+}
+
+.counter-app__buttons > button:hover {
+  color: var(--btn-bg-color, #000);
+  background-color: var(--btn-color, #fff);
+}
