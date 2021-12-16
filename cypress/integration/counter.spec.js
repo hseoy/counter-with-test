@@ -16,16 +16,18 @@ describe('counter app test', () => {
   });
 
   it('test: click the plus button to increment the count by 1', () => {
-    cy.get(COUNT_VALUE_SELECTOR).invoke('text').then((countValue) => {
-      const prevCountValue = Number(countValue);
+    cy.get(COUNT_VALUE_SELECTOR)
+      .invoke('text')
+      .then((countValue) => {
+        const prevCountValue = Number(countValue);
 
-      cy.get(PLUS_BUTTON_SELECTOR).click();
+        cy.get(PLUS_BUTTON_SELECTOR).click();
 
-      cy
-        .get(COUNT_VALUE_SELECTOR)
-        .invoke('text')
-        .should('eq', `${prevCountValue + 1}`);
-    });
+        cy
+          .get(COUNT_VALUE_SELECTOR)
+          .invoke('text')
+          .should('eq', `${prevCountValue + 1}`);
+      });
   });
   
   it('test: click the minus button to decrement the count by 1', () => {
